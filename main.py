@@ -12,17 +12,28 @@ else:
     is_negative = False
 
 # Check the category of the number based on its value and sign
+# Block 1
 if num < 0 and num < -100:
     print("Number is a large negative number")
-elif num > 100 and not is_negative:
+
+# Block 2
+if num > 100 and not is_negative:
     print("Number is a large positive number")
-elif 50 <= num <= 100 and is_negative:
+
+# Block 3
+if 50 <= num <= 100 and is_negative:
     print("Number is a medium negative number")
-elif 50 <= num <= 100 and not is_negative:
+
+# Block 4
+if 50 <= num <= 100 and not is_negative:
     print("Number is a medium positive number")
-elif 0 <= num <= 50 and is_negative:
+
+# Block 5
+if 0 <= num <= 50 and is_negative:
     print("Number is a small negative number")
+
 elif 0 <= num <= 50 and not is_negative:
     print("Number is a small positive number")
+
 elif num == 0:
     print("Number is zero")
